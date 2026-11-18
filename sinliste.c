@@ -106,5 +106,26 @@
 /****************************************************************************/
 void findbyposition(psinliste *pliste, int position){
 	
+	psinliste tmp;
+
+	if(position>=lenght_sinliste(pliste)){
+		// La position recherchée exède la capacité de notre liste
+		return null;
+	}
+	if(position<0){
+		// La position recherchée est en mode inversé, non traité pour l'instant
+		return null;
+	}
+	if(position == 0){
+		// C'est notre premier élement
+		return pliste->data;
+	}
+	if(position>0){
+		// On va traversé toute la liste et renvoyer les données de notre position
+		for(i=0; i<=position-1; i++){
+			tmp=pliste->nxt;
+		}
+		return tmp->data;
+	}
 }
 	
