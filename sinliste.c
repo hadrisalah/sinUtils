@@ -57,9 +57,9 @@
 	}
 
 
-	/****************************************************************/
-	/********fonction de suppression d'une donnée de liste***********/
-	/****************************************************************/
+/****************************************************************/
+/********fonction de suppression d'une donnée de liste***********/
+/****************************************************************/
 
 	bool delbyposition(psinliste *ppliste, int position){
 		psinliste tmp, delelement, pliste;
@@ -88,9 +88,9 @@
 		return true;
 		}
 
-	/****************************************************************************/
-	/********fonction de suppression de la première donnée de la liste***********/
-	/****************************************************************************/
+/****************************************************************************/
+/********fonction de suppression de la première donnée de la liste***********/
+/****************************************************************************/
 		bool delfirst(psinliste *ppliste){
 			psinliste tmp,pliste=*ppliste;
 			tmp=pliste;
@@ -100,5 +100,11 @@
 			free(tmp);
 			return true;
 		}
+
+/****************************************************************************/
+/********fonction de recherche de donnée en utilisant sa position************/
+/****************************************************************************/
+void findbyposition(psinliste *pliste, int position){
 	
+}
 	
