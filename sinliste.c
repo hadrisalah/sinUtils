@@ -107,6 +107,7 @@
 void findbyposition(psinliste *pliste, int position){
 	
 	psinliste tmp;
+	tmp=pliste;
 
 	if(position>=lenght_sinliste(pliste)){
 		// La position recherchée exède la capacité de notre liste
@@ -123,7 +124,7 @@ void findbyposition(psinliste *pliste, int position){
 	if(position>0){
 		// On va traversé toute la liste et renvoyer les données de notre position
 		for(i=0; i<=position-1; i++){
-			tmp=pliste->nxt;
+			tmp=tmp->nxt;
 		}
 		return tmp->data;
 	}
